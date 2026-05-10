@@ -1,8 +1,3 @@
-import kaggle
-kaggle.api.dataset_download_files(
-    'stefanoleone992/fifa-22-complete-player-dataset',
-    path='.', unzip=True
-)
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -33,6 +28,11 @@ import xgboost as xgb
 from xgboost import XGBClassifier
 import lightgbm as lgb
 from lightgbm import LGBMClassifier
+import kaggle
+kaggle.api.dataset_download_files(
+    'stefanoleone992/fifa-22-complete-player-dataset',
+    path='.', unzip=True
+)
 
 # ─── Page Config ───────────────────────────────────────────────────────────────
 st.set_page_config(
