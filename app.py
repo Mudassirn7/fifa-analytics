@@ -1,3 +1,9 @@
+# app.py ke top mein yeh add karo
+import kaggle
+kaggle.api.dataset_download_files(
+    'stefanoleone992/fifa-22-complete-player-dataset',
+    path='.', unzip=True
+)
 import streamlit as st
 import pandas as pd
 import numpy as np
