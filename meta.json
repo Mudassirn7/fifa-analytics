@@ -1,0 +1,185 @@
+{
+  "reg_features": [
+    "age",
+    "overall",
+    "pace",
+    "shooting",
+    "passing",
+    "dribbling",
+    "defending",
+    "physicality",
+    "height_cm",
+    "weight_kg",
+    "international_reputation",
+    "weak_foot",
+    "skill_moves",
+    "wage_eur",
+    "release_clause_eur"
+  ],
+  "clf_features": [
+    "age",
+    "overall",
+    "pace",
+    "shooting",
+    "passing",
+    "dribbling",
+    "defending",
+    "physicality",
+    "height_cm",
+    "weight_kg",
+    "international_reputation",
+    "weak_foot",
+    "skill_moves"
+  ],
+  "classes": [
+    "Attacker",
+    "Defender",
+    "Goalkeeper",
+    "Midfielder"
+  ],
+  "best_reg": "Lasso Regression",
+  "best_clf": "Logistic Regression",
+  "reg_results": {
+    "Linear Regression": {
+      "RMSE": 303093.77,
+      "MAE": 243076.7,
+      "R2": 0.9862
+    },
+    "Ridge Regression": {
+      "RMSE": 303092.19,
+      "MAE": 243080.73,
+      "R2": 0.9862
+    },
+    "Lasso Regression": {
+      "RMSE": 303091.21,
+      "MAE": 243070.18,
+      "R2": 0.9862
+    },
+    "ElasticNet": {
+      "RMSE": 2486701.42,
+      "MAE": 2042453.65,
+      "R2": 0.0689
+    },
+    "Decision Tree": {
+      "RMSE": 577052.65,
+      "MAE": 462429.2,
+      "R2": 0.9499
+    },
+    "Random Forest": {
+      "RMSE": 421794.65,
+      "MAE": 334675.85,
+      "R2": 0.9732
+    },
+    "Extra Trees": {
+      "RMSE": 390629.66,
+      "MAE": 313684.21,
+      "R2": 0.977
+    },
+    "Gradient Boosting": {
+      "RMSE": 344902.88,
+      "MAE": 273980.95,
+      "R2": 0.9821
+    },
+    "AdaBoost": {
+      "RMSE": 541302.44,
+      "MAE": 433841.7,
+      "R2": 0.9559
+    },
+    "Bagging Regressor": {
+      "RMSE": 427161.38,
+      "MAE": 338683.07,
+      "R2": 0.9725
+    },
+    "KNN Regressor": {
+      "RMSE": 885904.3,
+      "MAE": 700781.43,
+      "R2": 0.8818
+    },
+    "SVR": {
+      "RMSE": 658733.41,
+      "MAE": 476482.58,
+      "R2": 0.9347
+    }
+  },
+  "clf_results": {
+    "Logistic Regression": {
+      "Accuracy": 0.9625,
+      "F1_Score": 0.9624
+    },
+    "Decision Tree": {
+      "Accuracy": 0.9113,
+      "F1_Score": 0.9126
+    },
+    "Random Forest": {
+      "Accuracy": 0.9413,
+      "F1_Score": 0.9395
+    },
+    "Extra Trees": {
+      "Accuracy": 0.9363,
+      "F1_Score": 0.9335
+    },
+    "Gradient Boosting": {
+      "Accuracy": 0.96,
+      "F1_Score": 0.9594
+    },
+    "AdaBoost": {
+      "Accuracy": 0.945,
+      "F1_Score": 0.9457
+    },
+    "Bagging Classifier": {
+      "Accuracy": 0.9375,
+      "F1_Score": 0.9367
+    },
+    "KNN Classifier": {
+      "Accuracy": 0.8375,
+      "F1_Score": 0.832
+    },
+    "SVM Classifier": {
+      "Accuracy": 0.9437,
+      "F1_Score": 0.9439
+    },
+    "Naive Bayes": {
+      "Accuracy": 0.915,
+      "F1_Score": 0.9132
+    }
+  },
+  "reg_model_keys": {
+    "Linear Regression": "reg_linear_regression",
+    "Ridge Regression": "reg_ridge_regression",
+    "Lasso Regression": "reg_lasso_regression",
+    "ElasticNet": "reg_elasticnet",
+    "Decision Tree": "reg_decision_tree",
+    "Random Forest": "reg_random_forest",
+    "Extra Trees": "reg_extra_trees",
+    "Gradient Boosting": "reg_gradient_boosting",
+    "AdaBoost": "reg_adaboost",
+    "Bagging Regressor": "reg_bagging_regressor",
+    "KNN Regressor": "reg_knn_regressor",
+    "SVR": "reg_svr"
+  },
+  "clf_model_keys": {
+    "Logistic Regression": "clf_logistic_regression",
+    "Decision Tree": "clf_decision_tree",
+    "Random Forest": "clf_random_forest",
+    "Extra Trees": "clf_extra_trees",
+    "Gradient Boosting": "clf_gradient_boosting",
+    "AdaBoost": "clf_adaboost",
+    "Bagging Classifier": "clf_bagging_classifier",
+    "KNN Classifier": "clf_knn_classifier",
+    "SVM Classifier": "clf_svm_classifier",
+    "Naive Bayes": "clf_naive_bayes"
+  },
+  "needs_scale_reg": [
+    "Linear Regression",
+    "Ridge Regression",
+    "Lasso Regression",
+    "ElasticNet",
+    "KNN Regressor",
+    "SVR"
+  ],
+  "needs_scale_clf": [
+    "Logistic Regression",
+    "KNN Classifier",
+    "SVM Classifier"
+  ]
+}
